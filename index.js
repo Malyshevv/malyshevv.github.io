@@ -127,14 +127,10 @@
     					$('input[name="fio"]').attr("disabled","disabled");
     					$('input[name="email"]').attr("disabled","disabled");
 				    	$('input[name="phone"]').attr("disabled","disabled");
-						$.getJSON( "good.json", function( data ) {
-  							alert(data["Status"]);
-						});
+					 $('#resultContainer').text('Отправленно');
                    },
                    error: function(response){
-						$.getJSON( "good.json", function( data ) {
-  							alert(data["Status"]);
-						});
+					 $('#resultContainer').text('ERROR');
                    }
 
             }); // end ajax({...})
